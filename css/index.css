@@ -65,6 +65,17 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+@media screen and (min-width: 501px)  {
+	h1 {
+		border: 2px solid purple;
+	}
+}
+
+@media screen and (min-width: 801px)  {
+	h1 {
+		border: 2px solid darkgreen;
+	}
+}
 
 @media screen and (min-width: 1024px)  {
 	h1 {
@@ -75,6 +86,10 @@ h1, h2, h3, h4, h5 {
 body {
 	width: 90%;
 	margin: 0 auto;
+}
+
+p {
+	line-height: 1.15;
 }
 
 header {
@@ -104,7 +119,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	height: 450px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .upper-section div {
@@ -114,15 +129,14 @@ a {
 	text-align: center;
 }
 
-.upper-section img {
+.round-img {
 	height: 370px;
 	margin-top: 55px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 h1 {
-	font-size: 80px;
-	padding: 0px;
+	font-size: 78px;
 }
 
 button {
@@ -130,6 +144,12 @@ button {
 	width: 170px;
 	padding: 5px;
 	background: none;
+	margin-top: 10px;
+	border: solid 1px;
+}
+
+hr {
+	border: solid 1px;
 }
 
 .middle-section {
@@ -168,9 +188,103 @@ footer {
 }
 
 @media (max-width: 800px) {
+	body {
+		width: 95%;
+		margin: 0 auto;
+	}
 
+	header {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+
+	.logo {
+		margin-top: 5px;
+		padding-left: 20px;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.round-img {
+		display: none;
+		height: 0px;
+	}
+
+	.upper-section {
+		justify-content: center;
+		padding-right: 50px;
+		
+	}
+
+	.middle-section div {
+		width: 48%;
+	}
+
+	.middle-img {
+		width: 100%;
+		height: 145px;
+		margin: auto;
+	}	
+
+	.lower-section div {
+		width: 29%;
+	}
+
+	footer {
+		padding: 5px 0 25px 0;
+	}
 }
 
 @media (max-width: 500px) {
-    
+	.logo {
+		padding: 0;
+		margin: 20px;
+	}
+
+    nav {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0px;
+	}
+
+	a {
+		border-top: solid 1px;
+		width: 110%;
+		padding: 20px;
+		font-size: 20px;
+	}
+
+	.contact-link {
+		border: solid 1px;
+		width: 110%;
+		padding: 20px;
+	}
+
+	.upper-section {
+		padding-right: 300px;
+	}
+
+	h1 {
+		width: 450px;
+		padding-right: 125px;
+	}
+
+	button {
+		margin-left: 75px;
+	}
+
+	.middle-section {
+		flex-direction: column;
+	}
+
+	.middle-img {
+
+	}
+
+	.lower-section  {
+		flex-direction: column;
+	}
 }
+
