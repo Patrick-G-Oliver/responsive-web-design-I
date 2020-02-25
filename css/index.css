@@ -65,23 +65,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-@media screen and (min-width: 501px)  {
-	h1 {
-		border: 2px solid purple;
-	}
-}
-
-@media screen and (min-width: 801px)  {
-	h1 {
-		border: 2px solid darkgreen;
-	}
-}
-
-@media screen and (min-width: 1024px)  {
-	h1 {
-		border: 2px solid red;
-	}
-}
 
 body {
 	width: 90%;
@@ -133,7 +116,7 @@ a {
 	height: 370px;
 	margin-top: 55px;
 	padding-bottom: 25px;
-}
+} 
 
 h1 {
 	font-size: 78px;
@@ -187,6 +170,12 @@ footer {
 	padding: 35px 0 125px 0;
 }
 
+@media (min-width: 1025px) {
+	h1 {
+		border: solid red 2px;
+	}
+}
+
 @media (max-width: 800px) {
 	body {
 		width: 95%;
@@ -215,7 +204,6 @@ footer {
 	.upper-section {
 		justify-content: center;
 		padding-right: 50px;
-		
 	}
 
 	.middle-section div {
@@ -224,7 +212,7 @@ footer {
 
 	.middle-img {
 		width: 100%;
-		height: 145px;
+		height: 155px;
 		margin: auto;
 	}	
 
@@ -238,6 +226,11 @@ footer {
 }
 
 @media (max-width: 500px) {
+	body {
+		width: 92%;
+		margin: 0 auto;
+	}
+
 	.logo {
 		padding: 0;
 		margin: 20px;
@@ -251,19 +244,20 @@ footer {
 
 	a {
 		border-top: solid 1px;
-		width: 110%;
+		width: 120%;
 		padding: 20px;
 		font-size: 20px;
 	}
 
 	.contact-link {
 		border: solid 1px;
-		width: 110%;
+		width: 120%;
 		padding: 20px;
 	}
 
 	.upper-section {
 		padding-right: 300px;
+		margin-bottom: 0;
 	}
 
 	h1 {
@@ -275,16 +269,39 @@ footer {
 		margin-left: 75px;
 	}
 
+	.upper-hr {
+		margin-bottom: 35px;
+	}
+
 	.middle-section {
 		flex-direction: column;
 	}
 
-	.middle-img {
+	.middle-section div {
+		width: 95%;
+		padding: 25px 0;
+	}
 
+	.middle-img {
+		margin-top: 30px;
+		height: 100px;
 	}
 
 	.lower-section  {
 		flex-direction: column;
+	}
+
+	.lower-section div {
+		width: 95%;
+		padding: 30px 0;
+	}
+
+	.contact-section {
+		padding: 30px 0px;
+	}
+
+	footer {
+		padding-bottom: 20px;
 	}
 }
 
