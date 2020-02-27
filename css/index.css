@@ -204,6 +204,11 @@ footer {
 	.upper-section {
 		justify-content: center;
 		padding-right: 50px;
+		height: 420px;
+	}
+
+	.upper-section div {
+		padding-top: 75px;
 	}
 
 	.middle-section div {
@@ -256,8 +261,13 @@ footer {
 	}
 
 	.upper-section {
+		height: 410px;
 		padding-right: 300px;
 		margin-bottom: 0;
+	}
+
+	.upper-section div {
+		padding-top: 55px;
 	}
 
 	h1 {
